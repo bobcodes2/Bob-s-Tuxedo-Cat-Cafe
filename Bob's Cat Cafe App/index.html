@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bob's Tuxedo Cat Cafe</title>
+    <link type="text/css" rel="stylesheet" href="cafe.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="bobfinal.js"></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo1.png" alt="Bob's Tuxedo Cat Cafe"/>
+    </header>
+    <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <section id="menu">
+            	<h2>Java Menu</h2>
+            	<p>Add items to your cart and prepare to be amazed.</p>
+            	<ul id="menuItems">
+            		<li><a href="#"><img id="images/espresso_info.jpg" src="images/espresso.jpg" alt="espresso"/></a></li>
+            		<li><a href="#"><img id="images/latte_info.jpg" src="images/latte.jpg" alt="latte"/></a></li>
+            		<li><a href="#"><img id="images/cappuccino_info.jpg" src="images/cappuccino.jpg" alt="cappuccino"/></a></li>
+            		<li><a href="#"><img id="images/coffee_info.jpg" src="images/coffee.jpg" alt="coffee"/></a></li>
+            		<li><a href="#"><img id="images/biscotti_info.jpg" src="images/biscotti.jpg" alt="biscotti"/></a></li>
+            		<li><a href="#"><img id="images/scone_info.jpg" src="images/scone.jpg" alt="scone"/></a></li>
+            	</ul>
+            </section>
+
+            <section>
+            	<h2>Coffee Cart</h2>
+            	<section>
+            		<select id="order" name="order" size="6"></select>
+            		<p id="total"></p>           		
+           		</section>
+            	<section id="buttons">
+           			<!-- <input type="button" name="place_order" id="place_order" value="Consummate Order"> -->
+					<input type="button" name="selectedOrder" id="selectedOrder" value="Place Order">
+					<!-- <input type="button" name="clear_order" id="clear_order" value="Reset Order"> -->
+           			<input type="button" name="clear_order" id="clear_order" value="Clear Cart">				            		
+            	</section>
+            </section>   
+
+        </form>
+    </main> 
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="bobfinal.js"></script> -->
+</body>
+</html>
